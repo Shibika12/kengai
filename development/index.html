@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- creating a title and internal css -->
+    <title>Kengai</title>
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+      <!-- internal css -->
+        <style type="text/css">
+            *
+            {
+                margin: 0px auto;
+            }
+        </style>
+</head>
+
+
+    <!-- creating a wrapper -->
+    <div style="background-color:rgb(250, 250, 250); width:100%; height: 900px; position: relative;">
+        <!-- providing a header tag -->
+        <header id="site_header">
+            <div class="navbar">
+              <!-- logo -->
+              <div class="site_logo">
+                <img src="images/kengai.jpeg "height="100%" width="100%;">
+              </div> 
+              <ul>
+                    
+                       <li> <a  href="index.html">Home</a></li>
+                <li> <a href="product.html">Product</a></li>
+                <li> <a href="blog.html">Blog</a></li>
+                <li> <a href="research.html">Research</a></li>
+                <li> <a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <div class="search-container">
+                  <input type="text" placeholder="Search.." name="search">
+                  
+                  
+                </div>
+                </ul>  
+                <!--date  -->
+              <p id="p2"></p>
+              <script>
+                  var date = new Date();
+                  var current_date =(date.getMonth()+1) +"/"+date.getDate()+"/"+date.getFullYear() ;
+                  document.getElementById("p2").innerHTML = current_date;
+              </script>
+           
+              <!-- time -->
+              <p id="p1"></p>
+              <script>
+                  var date = new Date();
+                  var current_time = date.getHours()+":"+date.getMinutes();
+                  document.getElementById("p1").innerHTML = current_time;
+                </script>  
+            </div> 
+            
+        </header>
+        <main id="main_body">
+          <div class="banner">
+            <div class="border"> </div>
+            <h10>"Plants smiles,Grow laughter,Harvest love"</h10>
+            
+            <div class="border border-bottom"> </div>
+            </div>
+          <br>
+            <div class="text_bonsai">
+            <h2>Kengai</h2>
+            <p>Our company was established in 1995 AD with a pure intention of providing  our customers with satisfactory and reliable services. We decided on selling Bonsai plants as it is the Japenese art of growing and training miniature trees in containers, developed from tradition Chinese art of penging.People sharing same ideas and love for Bonsai trees gathered us together as partners in this company to sell bonsai plants.we specifially chose Bonsai as can be used as an art therapy tool and its very good for mental health. At first we were selling locally whereas now we have started going international.Now that our company has grown we have started shipping globally and are situated in 18 different countries .Started from a small shop having only 4 people to now having company with 2000 employees we have grown as company but now we are one big FAMILY.</p>
+            </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <!-- bannerimage -->
+          
+            <div class="ban_img">
+            <img src="images/plantly.jpeg" alt="kengai">
+            </div>
+            <br>
+            <br>
+            <div class="ban_text">
+            <p>The word bonsai can also refer to the art of training and growing these dwarf plants in containers. Bonsai specimens are ordinary trees and shrubs, not hereditary dwarfs; they are dwarfed by a system of pruning roots and branches and training branches by tying them with wire. The art originated in China, but has been pursued and developed primarily by the Japanese. The inspiration for bonsai is found in nature, in trees that grow in harsh, rocky places, and are dwarfed and gnarled throughout their existence. Bonsai may live for a century or more and can be handed down from one generation to another. Bonsai pots, usually earthenware and of variable shape, are carefully chosen to harmonize in color and proportion with the tree.</p>
+            </div>
+             <!-- ourproducts -->
+            <h2 >Our Products</h2>
+
+            <div class="produc_img1">
+              <img src="images/7.png" alt="kengai"width="350" height="350">
+              
+              
+            </div>
+            <div class="produc_img2">
+              <img src="images/2.jpeg" alt="kengai"width="350" height="350">
+              
+            </div>
+            <div class="produc_img3">
+              <img src="images/4.jpeg" alt="kengai"width="350" height="350">
+              
+            </div>
+            <div class="product-price-btn">
+              
+              <button type="button">View Products</button>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <!-- blog -->
+             <h2> Blog</h2>
+            <div class="blog_1">
+              <div class="product-img">
+                <img src="images/1.jpeg" height="420" width="327">
+              </div>
+              <div class="product-info">
+                <div class="product-text">
+                  <h1>Impact of Technology</h1>
+                  
+                  <p>Technology has also had a signigicant impact on the way bonsai plants are sold.Online ecommerce platforms have made it possible for customers.. </p>
+                </div>
+                <div class="product-price-btn">
+                  
+                  <button type="button">View More</button>
+                </div>
+              </div>
+            </div> 
+            <!-- slider -->
+            <h2>Our Bonsai</h2>
+            <div class="slideshow-container">
+
+              <div class="mySlides fade">
+                
+                <img src="images/slider3.jpeg" style="width:100%">
+                <div class="text">"From little seeds grow mighty trees."</h6>  </div>
+              </div>
+              
+              <div class="mySlides fade">
+                
+                <img src="images/slider1.jpeg" style="width:100%">
+                
+              </div>
+              
+              <div class="mySlides fade">
+                
+                <img src="images/slider2.jpeg" style="width:100%">
+                
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+              
+              </div>
+              <br>
+              
+              
+              <script>
+              let slideIndex = 1;
+              showSlides(slideIndex);
+              
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+              
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+              
+              function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+                }
+                
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+              }
+              </script>
+              <br>
+              <br>
+
+              <hr style="width:85%;height:2px;border-width:0;color:rgb(5, 4, 4);background-color:rgb(15, 13, 13)">
+              
+
+
+              
+              
+        </main>
+        <!-- footer!--  -->
+        <div class="footer">
+          <div class="col-1">
+            <h3>USEFUL LINK</h3>
+            <a href="#"><b>Home</b></a>
+            <a href="#"><b>Blog</b></a>
+            <a href="#"><b>Research</b></a>
+            <a href="#"><b>About Us</b></a>
+          </div>
+          <div class="col-2">
+            <h3>NEWSLETTER</h3>
+            <form-1>
+              <input type="email" placeholder="your email">
+              <br>
+              <button type="submit">Subscribe Now</button>
+            </form-1><br><br><br><br>
+            <p>All Rights Reserved @Kengai 2023</p>
+          </div>
+          
+          <div class="col-3">
+            <img src="images\kengai.jpeg" style=" width: 60%; height: 90px;"><br>
+            
+            <p3><br>Kathmandu, Nepal</p3>
+            <div class="social-icons">
+                <img src="images/social.webp" style="height: 50px; width: 170px;">
+              <br>
+              <p5>follow on our socials</p5>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+        
+</div>
+
+
+</html>

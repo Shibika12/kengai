@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- creating a title and internal css -->
+        <title>Contact Us</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        <style>
+            *
+            {
+                margin: 0px auto;
+            }
+        </style>
+    </head>
+        <!-- creating a wrapper -->
+    <div style="background-color:rgb(152, 228, 153); width:100%; height: 1700px;">
+    <!-- providing a header tag -->
+    <header id="site_header">
+        <div class="navbar">
+          <!-- logo -->
+          <div class="site_logo">
+            <img src="images\kengai.jpeg" height="100%" width="100%;">
+          </div> 
+          <ul>
+                
+                   
+            <<li> <a  href="index.html">Home</a></li>
+                <li> <a href="product.html">Product</a></li>
+                <li> <a href="blog.html">Blog</a></li>
+                <li> <a href="research.html">Research</a></li>
+                <li> <a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <div class="search-container">
+                  <input type="text" placeholder="Search.." name="search">
+                  
+                  
+                </div>
+            </ul> 
+            <!--date  -->
+            <p id="p2"></p>
+              <script>
+                  var date = new Date();
+                  var current_date =(date.getMonth()+1) +"/"+date.getDate()+"/"+date.getFullYear() ;
+                  document.getElementById("p2").innerHTML = current_date;
+              </script>
+            
+            <!-- time -->
+            <p id="p1"></p>
+              <script>
+                var date = new Date();
+                var current_time = date.getHours()+":"+date.getMinutes();
+                document.getElementById("p1").innerHTML = current_time;
+              </script> 
+        </div> 
+
+        
+        
+        
+        
+    </header>
+    <body>
+        <div class="main_div">
+          <div class="">
+            <img src="images/contactusxx.jpg" alt="image" width="100%" height="500px" style="margin: 10px auto 20; display: block;">
+          </div>
+          <h1 style="text-align: center; font-size: 40px;">We would love to hear from you!</h1>
+          <br>
+        <div class="container" style="width: 50%; height: 600px; margin:0 auto;background-color: burlywood">
+          <h1 style="text-align: center; text-decoration: underline;"> Feedback Form</h1>
+          <form style="padding:20px">
+            <label for="name">Name:</label>
+            <input type="text" id="fname" name="name" required>
+      
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+      
+            <label for="email"> Email:</label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="message">Leave us a message:</label>
+            <textarea id="message" name="message" placeholder="Leave me a text if you are having difficulties with our website."></textarea>
+      
+            <input type="submit" value="Send" class="submit-btn" onclick="messageSent()"> 
+          </form>
+        </div>
+      </br>
+      </br>
+      </br>
+      <div>
+        <h1 style="text-align: center;"><u> Kengai </u></h1>
+          <p style="text-align: center; padding-left: 500px; padding-right: 500px;">Kathmandu, Nepal <br> 0374979426 - kengai.biswash@gmail.com <br> 8888888569 - kengai.suban@gmail.com <br> 6444444444 - kengai.shibika@gmail.com <br> 7777777777 - kengai.ajay@gmail.com</p>
+      </div>
+      
+        <script>
+          function messageSent() {
+            var nameX = document.getElementById("fname").value;
+            var lastX = document.getElementById("address").value;
+            var emailX = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+              if (nameX=="" || lastX=="" || emailX=="" || message=="")
+              {
+                if (nameX=="" && lastX=="" &&emailX=="" && message=="")
+                {
+                  alert("All empty");
+                }
+                else if (nameX=="" && lastX=="" && emailX=="")
+                {
+                  alert("Name, address, Email empty");
+                }
+                else if (nameX=="" && lastX=="" && message=="")
+                {
+                  alert("Name,address, message empty")
+                }
+                else if (nameX=="" && message=="" && emailX=="")
+                {
+                  alert("Name,message,email empty")
+                }
+                else if(emailX=="" && message=="" && lastX=="")
+                {
+                  alert("email,message,address empty")
+                }
+                else if(nameX=="" && lastX=="")
+                {
+                  alert("Name,address empty")
+                }
+                else if(nameX=="" && message=="")
+                {
+                  alert("Name, message empty")
+                }
+                else if(nameX=="" && emailX=="")
+                {
+                  alert("Name, email empty")
+                }
+                else if(lastX=="" && message=="")
+                {
+                  alert("address, message empty")
+                }
+                else if(message=="" && emailX=="")
+                {
+                  alert("message,email empty")
+                  
+                }
+                else if(lastX=="" && emailX=="")
+                {
+                  alert("address, email empty")
+                }
+                else if(nameX=="")
+                {
+                  alert("Name is empty")
+                }
+                else if(lastX=="")
+                {
+                  alert("address is empty")
+                }
+                else if(emailX=="")
+                {
+                  alert("email is empty")
+                }
+                else{
+                  alert("Message empty");
+                }
+      
+              }
+              else{
+                alert("Congratulation!!You've successfully sent your message.") 
+              }
+          
+          }
+        </script>
+        <br>
+        <br>
+        <br>
+        
+    
+        
+      
+      
+    </div>
+    <!-- footer!--  -->
+    <div class="footer">
+        <div class="col-1">
+          <h3>USEFUL LINK</h3>
+          <a href="#"><b>Home</b></a>
+          <a href="#"><b>Blog</b></a>
+          <a href="#"><b>Product</b></a>
+          <a href="#"><b>Research</b></a>
+          <a href="#"><b>About Us</b></a>
+          <a href="#"><b>contact Us</b></a>
+        </div>
+        <div class="col-2">
+          <h3>NEWSLETTER</h3>
+          <form-1>
+            <input type="submit" placeholder="your email">
+            <br>
+            <button type="submit">Subscribe Now</button>
+          </form-1><br><br><br><br><br><br>
+          <p7>All Rights Reserved @Kengai 2023</p7>
+        </div>
+        
+        <div class="col-3">
+          <img src="images\kengai.jpeg" style=" width: 60%; height: 90px;"><br>
+          
+          <p3><br>Kathmandu, Nepal</p3>
+          <div class="social-icons">
+            <img src="images/social.webp" style="height: 50px; width: 170px;">
+           
+            <br>
+            <p5>follow on our socials</p5>
+          </div>
+        </div>
+        
+      </div>
+</body>
+
+</html>

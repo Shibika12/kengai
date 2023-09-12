@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- creating a title and internal css -->
+        <title>Blog</title>
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+            
+            <style>
+                *
+                {
+                    margin: 0px auto;
+                }
+            </style>
+    </head>
+    <!-- creating a wrapper -->
+    <div style="background-color:rgb(250, 250, 250); width:100%; height: 900px;">
+         <!-- providing a header tag -->
+         <header id="site_header">
+            <div class="navbar">
+              <!-- logo -->
+              <div class="site_logo">
+                <img src="images\kengai.jpeg" height="100%" width="100%;">
+              </div> 
+              <ul>
+                    
+                       
+                       
+                <li> <a  href="index.html">Home</a></li>
+                <li> <a href="product.html">Product</a></li>
+                <li> <a href="blog.html">Blog</a></li>
+                <li> <a href="research.html">Research</a></li>
+                <li> <a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <div class="search-container">
+                  <input type="text" placeholder="Search.." name="search">
+                  
+                  
+                </div>
+                </ul> 
+                <!--date  -->
+                <p id="p2"></p>
+                  <script>
+	                  var date = new Date();
+	                  var current_date =(date.getMonth()+1) +"/"+date.getDate()+"/"+date.getFullYear() ;
+	                  document.getElementById("p2").innerHTML = current_date;
+                  </script>
+                
+                <!-- time -->
+                <p id="p1"></p>
+                  <script>
+                    var date = new Date();
+                    var current_time = date.getHours()+":"+date.getMinutes();
+                    document.getElementById("p1").innerHTML = current_time;
+                  </script> 
+            </div> 
+        </header>
+        <main id="main_body2">
+            <div class="container"; style="background-color: lightgreen;width: 90%;height: 250px;border: 5px solid grey; margin-left: 0px auto; margin-right: 0px auto; margin-top: 20px; margin-bottom: 0px;" id="About Technology">
+                <h2><center>About Technology</center></h2>
+                <p style="font-size: 22px;">Technology refers to the application of scientific knowledge for practical purposes, particularly in industry. In the context of bonsai cultivation, technology encompasses a wide range of products and processes, from specialized tools and soil mixtures to indoor cultivation systems and automation. The rapid pace of technological innovation continues to shape and influence the way bonsai trees are grown, trained and maintained. </p>
+                <div id="sentence-container"></div>
+                <button id="view-more-button">View More</button>
+                <button id="view-less-button" style="display: none;">View Less</button>
+                  </div>
+          
+              <div class="container"; style="background-color: lightgreen;width: 47%; float: left;height: 380px; margin-bottom: 20px; border: 5px solid grey;"id="positive-impact">
+                <h2><center>Positive Impact</center></h2>
+                <p style="font-size: 22px;">Technology has had a positive impact on the bonsai industry in many ways. One of the biggest advantages is the ability to shape and train bonsai trees with greater precision and accuracy using specialized tools such as bonsai wire and specialized pruning shears. Additionally, the ability to grow and maintain bonsai trees indoors has made the hobby more accessible to a wider range of enthusiasts. </p>
+                <div id="sentence-container1" ></div>
+                <button id="view-more-button1">View More</button>
+                <button id="view-less-button1" style="display: none;">View Less</button>
+              </div>
+          
+              <div class="container"; style="background-color: lightgreen;width: 47%; float: right;height: 380px;  margin-bottom: 20px; border: 5px solid grey;"id="negative-impact">
+                <h2><center>Negative Impact</center></h2>
+                <p style="font-size: 22px;">While technology has brought many benefits to the bonsai industry, it has also had a negative impact. One of the biggest concerns is the potential for over-reliance on automation and technology, which can lead to a loss of traditional skills and knowledge. Additionally, the use of technology in bonsai cultivation can also be expensive and may not be accessible to hobbyists with limited resources. </p>
+                <div id="sentence-container2"></div>
+                <button id="view-more-button2">View More</button>
+                <button id="view-less-button2" style="display: none;">View Less</button>
+              </div>
+          
+              <div class="container"; style="clear: both; background-color: lightgreen; width: 90%; height: 275px; margin-bottom: 0px; margin-top: 20px; border: 5px solid grey;">
+                <h2><center>Impact of technology whle selling Bonsai plants</center></h2><br>
+                <p style="font-size: 22px">Technology has also had a significant impact on the way bonsai plants are sold. Online e-commerce platforms have made it possible for customers to purchase bonsai plants from the comfort of their own homes. Additionally, technology has enabled more efficient and effective communication with customers, which allows for a more personalized shopping experience. However, the increased use of technology may also lead to a decrease in face-to-face interactions and personal customer service.</p>
+                <div id="sentence-container3"></div>
+                <button id="view-more-button3">View More</button>
+                <button id="view-less-button3" style="display: none;">View Less</button>
+              </div>
+          
+              <div class="container"; style="clear: both; background-color: lightgreen; width: 90%; height: 300px; margin-bottom: 0px; margin-top: 20px; border: 5px solid grey;">
+                <h2><center>Overall Conclusion</center></h2>
+                <p style="font-size: 22px">Technology has played a significant role in the advancement of bonsai cultivation and maintenance. It has brought many benefits such as precision and accuracy in shaping and training bonsai trees, and made it more accessible to a wider range of enthusiasts. However, it also has potential negative impacts such as over-reliance on automation, loss of traditional skills and knowledge and also it can be expensive. In the context of selling bonsai plants, technology has brought convenience for the customers but it may also lead to a decrease in face-to-face interactions and personal customer service. Overall, it's important to strike a balance between traditional techniques and modern technology to ensure that the beauty and art of bonsai is not lost. </p>
+                <div id="sentence-container4"></div>
+                <button id="view-more-button4">View More</button>
+                <button id="view-less-button4" style="display: none;">View Less</button>
+              </div>
+            <script src="main.js"></script>
+        </main>
+        
+
+          <!-- footer!--  -->
+        <div class="footer">
+          <div class="col-1">
+            <h3>USEFUL LINK</h3>
+            <a href="#"><b>Home</b></a>
+            <a href="#"><b>Blog</b></a>
+            <a href="#"><b>Product</b></a>
+            <a href="#"><b>Research</b></a>
+            <a href="#"><b>About Us</b></a>
+            <a href="#"><b>contact Us</b></a>
+          </div>
+          <div class="col-2">
+            <h3>NEWSLETTER</h3>
+            <form-1>
+              <input type="submit" placeholder="your email">
+              <br>
+              <button type="submit">Subscribe Now</button>
+            </form-1><br><br><br><br><br><br>
+            <p7>All Rights Reserved @Kengai 2023</p7>
+          </div>
+          
+          <div class="col-3">
+            <img src="images\kengai.jpeg" style=" width: 60%; height: 90px;"><br>
+            
+            <p3><br>Kathmandu, Nepal</p3>
+            <div class="social-icons">
+              <img src="images/social.webp" style="height: 50px; width: 170px;">
+              <br>
+              <p5>follow on our socials</p5>
+            </div>
+          </div>
+          
+        </div>  
+            
+            
+            
+        
+    </div>
+
+</html>

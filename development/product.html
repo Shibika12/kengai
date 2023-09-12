@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kengai</title>
+    
+             <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- creating a title and internal css -->
+   
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+      <!-- internal css -->
+        <style type="text/css">
+            *
+            {
+                margin: 0px auto;
+            }
+        </style>
+           
+</head>
+    <!-- creating a wrapper -->
+    <div style="background-color:rgb(250, 250, 250); width:100%; height: 1500px;">
+        <!-- providing a header tag -->
+        <header id="site_header">
+           <div class="navbar">
+              <!-- logo -->
+              <div class="site_logo">
+                <img src="images/kengai.jpeg" height="100%" width="100%;">
+              </div> 
+              <ul>
+                        <<li> <a  href="index.html">Home</a></li>
+                <li> <a href="product.html">Product</a></li>
+                <li> <a href="blog.html">Blog</a></li>
+                <li> <a href="research.html">Research</a></li>
+                <li> <a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <div class="search-container">
+                  <input type="text" placeholder="Search.." name="search">
+                  
+                  
+                </div>
+                </ul> 
+                <!--date  -->
+                <p id="p2"></p>
+                  <script>
+	                  var date = new Date();
+	                  var current_date =(date.getMonth()+1) +"/"+date.getDate()+"/"+date.getFullYear() ;
+	                  document.getElementById("p2").innerHTML = current_date;
+                  </script>
+                
+                <!-- time -->
+                <p id="p1"></p>
+                  <script>
+                    var date = new Date();
+                    var current_time = date.getHours()+":"+date.getMinutes();
+                    document.getElementById("p1").innerHTML = current_time;
+                  </script> 
+            </div> 
+
+        </header>
+        <main id="main_body1">
+        
+        <div class="container">
+            <div id="root"></div>
+            <!-- <div class="sidebar"></div> -->
+        </div>
+        
+        <script>
+            const product = [
+                {
+                    id: 1,
+                    image: 'images/1.jpeg',
+                    title: 'Ficus Bonsai Plant',
+                    price: '$20'
+                },
+                {
+                    id: 2,
+                    image: 'images/2.jpeg',
+                    title: 'Dwarf Bonsai Plant',
+                    price: '$45'
+                },
+                {
+                    id: 3,
+                    image: 'images/3.jfif',
+                    title: 'Fukien Bonsai Plant',
+                    price: '$60'
+                },
+                {
+                    id: 4,
+                    image: 'images/4.jpeg',
+                    title: 'Juniper Bonsai Plant',
+                    price: '$30'
+                },
+                {
+                    id: 5,
+                    image: 'images/5.jpeg',
+                    title: 'Maple Acer Bonsai Plant',
+                    price: '$65'
+                },
+                {
+                    id: 6,
+                    image: 'images/6.jfif',
+                    title: 'Snow Rose Bonsai Plant',
+                    price: '$35'
+                },
+                {
+                    id: 7,
+                    image: 'images/7.png',
+                    title: 'Bougainvillea Bonsai Plant',
+                    price: '$55'
+                },
+                {
+                    id: 8,
+                    image: 'images/8.jpeg',
+                    title: 'Azalea Bonsai Plant',
+                    price: '$50'
+                },
+                 {
+                    id: 9,
+                    image: 'images/9.jpeg',
+                    title: 'Oak Bonsai Plant',
+                    price: '$50'
+                },
+            ]
+            const categories = [...new Set(product.map((item)=>
+           {return item}))]
+    
+           let img = document.getElementById('root')
+           img.innerHTML = categories.map((item)=>
+           {
+            var {image, title, price} = item;
+               return(
+               `<div class="box">
+                    <div class="img-box">
+                        <img src=${image}></img>
+                    </div>
+                    <div class="left">
+                        <p16>${title}</p16>
+                        <br>
+                        <h16>${price}</h16>
+                        <button>Add to Cart</button>    
+                    </div>
+                </div>`)
+           }).join('')
+           </script>
+        </main>
+        
+        <!-- footer!--  -->
+        <div class="footer">
+          <div class="col-1">
+            <h3>USEFUL LINK</h3>
+            <a href="#"><b>Home</b></a>
+            <a href="#"><b>Blog</b></a>
+            <a href="#"><b>Research</b></a>
+            <a href="#"><b>About Us</b></a>
+          </div>
+          <div class="col-2">
+            <h3>NEWSLETTER</h3>
+            <form-1>
+              <input type="email" placeholder="your email">
+              <br>
+              <button type="submit">Subscribe Now</button>
+            </form-1><br><br><br><br>
+            <p7>All Rights Reserved @Kengai 2023</p7>
+          </div>
+          
+          <div class="col-3">
+            <img src="images/kengai.jpeg" style=" width: 60%; height: 90px;"><br>
+            
+            <p3><br>Kathmandu, Nepal</p3>
+            <div class="social-icons">
+                <img src="images/social.webp" style="height: 50px; width: 170px;">
+                <br>
+              <br>
+              <p5>follow on our socials</p5>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+</html>

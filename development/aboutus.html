@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- creating a title and internal css -->
+        <title>About Us</title>
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+            
+            <style>
+                *
+                {
+                    margin: 0px auto;
+                }
+            </style>
+    </head>
+    <!-- creating a wrapper -->
+    <div style="background-color:rgb(250, 250, 250); width:100%; height: 1200px;">
+        <!-- providing a header tag -->
+        <header id="site_header">
+            <div class="navbar">
+              <!-- logo -->
+              <div class="site_logo">
+                <img src="images\kengai.jpeg" height="100%" width="100%;">
+              </div> 
+              <ul>
+                    
+                       
+                <li> <a  href="index.html">Home</a></li>
+                <li> <a href="product.html">Product</a></li>
+                <li> <a href="blog.html">Blog</a></li>
+                <li> <a href="research.html">Research</a></li>
+                <li> <a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <div class="search-container">
+                  <input type="text" placeholder="Search.." name="search">
+                  
+                  
+                </div>
+                </ul> 
+                <!--date  -->
+                <p id="p2"></p>
+                  <script>
+	                  var date = new Date();
+	                  var current_date =(date.getMonth()+1) +"/"+date.getDate()+"/"+date.getFullYear() ;
+	                  document.getElementById("p2").innerHTML = current_date;
+                  </script>
+                
+                <!-- time -->
+                <p id="p1"></p>
+                  <script>
+                    var date = new Date();
+                    var current_time = date.getHours()+":"+date.getMinutes();
+                    document.getElementById("p1").innerHTML = current_time;
+                  </script> 
+            </div> 
+        </header>
+        <section>
+            <h2 class="title">Meet Our team Members</h2>
+            <div class="team-row">
+                <div class="member">
+                    <img src="images/shi.jpg" alt="">
+                    <h21>Shibika Singh Khatri</h21>
+                    <p21>Phone:+977 9801150177<br>
+                    
+                    Email: shibikakhatri12@gmail.com<br>
+                    Address: Golkupakha, Kathmandu<br><br>
+                    <b>Academic qualifications:</b><br>
+                    School - GEMS, Dhapakhel <br>
+                    Highschool - Trinity International College<br>
+                    Bachelor - Islington College<br><br>
+                    <b>Skills</b><br>
+                    Strong Communication<br>
+                    Leadership<br>
+                    Speaking and Writing<br></p21>
+                
+                </div>
+                <div class="member">
+                    <img src="images/sub.jpg" alt="">
+                    <h21>Suban Shrestha</h21><br>
+                    <p21>Phone:+977 9808281751<br>
+                    Email: shrestha.suban04@gmail.com<br>
+                    Address: Swoyambhu, bijeshwori<br><br>
+        
+        
+                    <b>Academic qualifications:</b> <br>
+                    School - St.Xaviers, Jawalakhel <br>
+                    Highschool - St.Xaviers<br>
+                    Bachelor - Islington College<br><br>
+                    
+                    <b>Skills</b><br>
+                    UI/UX desing and Photoshop<br>
+                    Animation<br>
+                    Editing<br></p21>
+                
+                </div>
+                <div class="member">
+                    <img src="images/bis.jpg" alt="">
+                    <h21>Bishwash Rai</h21><br>
+                    <p21>Phone:+977 9869415046<br>
+                   
+                    Email: Bishwas.Rai72@gmail.com<br>
+                    Address: Gothatar,Kathmandu<br><br>
+        
+        
+                    <b>Academic qualifications:</b> <br>
+                    School - Grammar Public School<br>
+                    Highschool - CCRC<br>
+                    Bachelor - Islington College<br><br>
+                    
+                    <b>Skills</b><br>
+                    Problem Solving<br>
+                    Time Management<br>
+                     Good Communication<br></p21>
+                
+                </p21>
+                </div>
+                  <div class="member">
+                    <img src="images/ajay.jpg" alt="">
+                    <h21>Ajay Bhujel</h21><br>
+                    <p21>Phone:+977 9841525050<br>
+                    
+                    Email: ajaybhujel71@gmail.com<br>
+                    Address: Bardibas-03, Mahottari<br><br>
+        
+        
+                    <b>Academic qualifications:</b> <br>
+                    School - Shree Janta Secondary School <br>
+                    Highschool - Shree Janta Secondary School<br>
+                    Bachelor - Islington College<br><br>
+                    
+                    <b>Skills</b><br>
+                    Strong Communication<br>
+                    Good in speaking English and Nepali<br>
+                    Basic computer skills<br></p21>
+                
+                    
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- footer!--  -->
+        <div class="footer">
+            <div class="col-1">
+              <h3>USEFUL LINK</h3>
+                <a href="#"><b>Home</b></a>
+                <a href="#"><b>Blog</b></a>
+                <a href="#"><b>Product</b></a>
+                <a href="#"><b>Research</b></a>
+                <a href="#"><b>About Us</b></a>
+                <a href="#"><b>contact Us</b></a>
+            </div>
+            <div class="col-2">
+              <h3>NEWSLETTER</h3>
+              <form-1>
+                <input type="submit" placeholder="your email">
+                <br>
+                <button type="submit">Subscribe Now</button>
+              </form-1><br><br><br><br><br><br>
+              <p7>All Rights Reserved @Kengai 2023</p7>
+            </div>
+            
+            <div class="col-3">
+              <img src="images\kengai.jpeg" style=" width: 60%; height: 90px;"><br>
+              
+              <p3><br>Kathmandu, Nepal</p3>
+              <div class="social-icons">
+                <img src="images/social.webp" style="height: 50px; width: 170px;">
+                <br>
+                <p5>follow on our socials</p5>
+              </div>
+            </div>
+            
+          </div>
+          
+    </div>
+</html>
